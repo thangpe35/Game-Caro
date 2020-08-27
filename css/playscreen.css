@@ -1,0 +1,29 @@
+.playscreen-container{
+    display: flex;
+}
+.playscreen-container .playscreen{
+    height: 100vh;
+    width: 100%;
+}
+.playscreen-container .playscreen .oco{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.playscreen-container .aside-left{
+    height: 100vh;
+    width: 25%;
+    border-right: 2px solid #dbdbdb;
+}
+
+.playscreen-container .aside-left .player{
+    width: 100%;
+    height: 373px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    border: 5px solid #dbdbdb;
+}
