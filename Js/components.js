@@ -81,6 +81,6 @@ components.playScreen = `
     </form>        
 </div>
 <div class="playscreen">
-    <div class="oco" ></div>
+    <div class="oco" id="oco"></div>
 </div>
 </div>`
