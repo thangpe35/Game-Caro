@@ -2,16 +2,24 @@
     display: flex;
 }
 .playscreen-container .playscreen{
-    height: 100vh;
+    height: max-content;
     width: 100%;
     background-color: #e5b27e;
+    
+}
+.playscreen-container .playscreen-row{
+   display: flex;
+    
 }
 .playscreen-container .playscreen .oco{
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     background-color: yellow;
     border: 1px solid black;
     cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem;
 }
 .playscreen-container .aside-left{
     height: 100vh;
@@ -30,6 +38,3 @@
     border: 5px solid #dbdbdb;
 }
 
-.playscreen-container .function {
-    
-}

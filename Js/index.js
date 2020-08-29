@@ -12,8 +12,6 @@ const init = () => {
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    console.log(firebase.app().name)
- document.getElementById('app').innerHTML = components.loginScreen
 //  view.setActiveScreen('loginScreen')
  firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
@@ -27,9 +25,20 @@ const init = () => {
       view.setActiveScreen('loginScreen')
       alert('Please verify your mail')
     }
+    
+   
   } else {
     view.setActiveScreen('loginScreen')
   }
 });
 }
 window.onload = init
+
+getDataFromDoc = (doc) => {
+  const data = doc.data()
+  data.id = doc.id
+  return data
+} 
+getDataFromDocs = (docs) => {
+  return docs.map(item => getDataFromDoc(item));
+}
